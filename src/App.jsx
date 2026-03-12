@@ -607,7 +607,7 @@ export default function App() {
   const [size, setSize] = useState(280);
   const [margin, setMargin] = useState(2);
   const [errorCorrection, setErrorCorrection] = useState("M");
-  const [fgColor, setFgColor] = useState("#274c6f");
+  const [fgColor, setFgColor] = useState("#000000");
   const [bgColor, setBgColor] = useState("#ffffff");
   const [transparentBg, setTransparentBg] = useState(false);
   const [logoDataUrl, setLogoDataUrl] = useState("");
@@ -729,7 +729,7 @@ export default function App() {
     setSize(clampNumber(Number(shared.size) || 280, 160, 512));
     setMargin(clampNumber(Number(shared.margin) || 2, 0, 8));
     setErrorCorrection(shared.errorCorrection || "M");
-    setFgColor(shared.fgColor || "#274c6f");
+    setFgColor(shared.fgColor || "#000000");
     setBgColor(shared.bgColor || "#ffffff");
     setTransparentBg(Boolean(shared.transparentBg));
     setLogoScale(clampNumber(Number(shared.logoScale) || 0.22, 0.12, 0.35));
@@ -1311,7 +1311,7 @@ export default function App() {
     setSize(clampNumber(Number(preset.size) || 280, 160, 512));
     setMargin(clampNumber(Number(preset.margin) || 2, 0, 8));
     setErrorCorrection(preset.errorCorrection || "M");
-    setFgColor(preset.fgColor || "#274c6f");
+    setFgColor(preset.fgColor || "#000000");
     setBgColor(preset.bgColor || "#ffffff");
     setTransparentBg(Boolean(preset.transparentBg));
     setLogoDataUrl(preset.logoDataUrl || "");
@@ -1383,7 +1383,7 @@ export default function App() {
       size: clampNumber(Number(preset.size) || 280, 160, 512),
       margin: clampNumber(Number(preset.margin) || 2, 0, 8),
       errorCorrection: errorValue,
-      fgColor: preset.fgColor || "#274c6f",
+      fgColor: preset.fgColor || "#000000",
       bgColor: preset.bgColor || "#ffffff",
       transparentBg: Boolean(preset.transparentBg),
       logoDataUrl: preset.logoDataUrl || "",
